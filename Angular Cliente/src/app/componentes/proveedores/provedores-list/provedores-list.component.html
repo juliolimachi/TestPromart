@@ -1,0 +1,23 @@
+
+<div class="card">
+    <div class="card-header">
+        <label for="">Lista de Proveedores</label>
+    </div>
+
+    <div class="card-body">
+            <table class="table table-hover">
+                    <tr *ngFor="let proveedores of service.list "> 
+                    <td (click)="populateForm(proveedores)">{{proveedores.NId}}</td>
+                    <td (click)="populateForm(proveedores)"> {{proveedores.Ruc}}</td>
+                    <td (click)="populateForm(proveedores)">{{proveedores.RazonSocial}}</td>
+                    <td (click)="populateForm(proveedores)">{{proveedores.Direccion}}</td>
+                    <td (click)="populateForm(proveedores)">{{proveedores.Nombre}}</td>
+                    <td>
+                        <i class="fa fa-trash-alt fa-lg text-danger" (click)="onDelete(proveedores.NId)">
+                    
+                        </i>
+                    </td>
+                    </tr>
+            </table>
+    </div>
+</div>

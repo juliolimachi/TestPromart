@@ -1,0 +1,14 @@
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\bin\Debug\netcoreapp2.2\TestPromart.deps.json
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\bin\Debug\netcoreapp2.2\TestPromart.runtimeconfig.json
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\bin\Debug\netcoreapp2.2\TestPromart.runtimeconfig.dev.json
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\bin\Debug\netcoreapp2.2\TestPromart.dll
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\bin\Debug\netcoreapp2.2\TestPromart.pdb
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\obj\Debug\netcoreapp2.2\TestPromart.csprojAssemblyReference.cache
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\obj\Debug\netcoreapp2.2\TestPromart.csproj.CoreCompileInputs.cache
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\obj\Debug\netcoreapp2.2\TestPromart.RazorAssemblyInfo.cache
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\obj\Debug\netcoreapp2.2\TestPromart.RazorAssemblyInfo.cs
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\obj\Debug\netcoreapp2.2\TestPromart.AssemblyInfoInputs.cache
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\obj\Debug\netcoreapp2.2\TestPromart.AssemblyInfo.cs
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\obj\Debug\netcoreapp2.2\TestPromart.RazorTargetAssemblyInfo.cache
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\obj\Debug\netcoreapp2.2\TestPromart.dll
+C:\Users\JULIO\source\repos\TestPromart\TestPromart\obj\Debug\netcoreapp2.2\TestPromart.pdb

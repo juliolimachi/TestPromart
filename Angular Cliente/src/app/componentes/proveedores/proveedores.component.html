@@ -1,0 +1,127 @@
+<div class="card">
+<div class="card-header">
+<label for="">Registro Proveedor</label>
+</div>
+<div class="card-body">
+   
+    <form #form ="ngForm" (submit)="onSubmit(form)">
+        <input type="hidden" name="NId" value="service.formDataProveedor.NId">
+      <div class="form-group">
+          <div class="input-group">
+
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-white">
+                  <i class="fa fa-file-alt"
+                  [class.green-icon]="Ruc.valid"
+                  [class.red-icon]="Ruc.invalid && Ruc.touched"></i>  
+            
+              </div>
+            </div>
+
+              <input type="text"
+              class="form-control" 
+              name="Ruc"
+              #Ruc="ngModel"
+              [(ngModel)]="service.formDataProveedor.Ruc"
+              placeholder="Ruc"
+              required minlength="11" maxlength="11"
+              >
+          </div>
+        
+      </div>
+
+      <div class="form-group">
+
+        <div class="input-group">
+
+          <div class="input-group-prepend">
+
+            <div class="input-group-text bg-white">
+                <i class="fa fa-file-alt"
+                [class.green-icon]="Ruc.valid"
+                [class.red-icon]="Ruc.invalid && Ruc.touched"></i>  
+          
+            </div>
+
+
+          </div>
+
+          <input type="text"
+          class="form-control" 
+          name="RazonSocial"
+          #RazonSocial="ngModel"
+          [(ngModel)]="service.formDataProveedor.RazonSocial"
+          placeholder="RazonSocial"
+          required
+          >
+        </div>
+      </div>
+
+
+      <div class="form-group">
+
+          <div class="input-group">
+  
+            <div class="input-group-prepend">
+  
+              <div class="input-group-text bg-white">
+                 
+                  <i class="fa fa-map-marked-alt"
+                  [class.green-icon]="Direccion.valid"
+                  [class.red-icon]="Direccion.invalid && Direccion.touched"></i>  
+            
+              </div>
+  
+  
+            </div>
+  
+            <input type="text"
+            class="form-control" 
+            name="Direccion"
+            #Direccion="ngModel"
+            [(ngModel)]="service.formDataProveedor.Direccion"
+            placeholder="Direccion"
+            required
+            >
+          </div>
+      </div>
+
+      <div class="form-group">
+
+          <div class="input-group">
+  
+            <div class="input-group-prepend">
+  
+              <div class="input-group-text bg-white">
+                  <i class="fa fa-user-circle"
+                  [class.green-icon]="Nombre.valid"
+                  [class.red-icon]="Nombre.invalid && Nombre.touched"></i>  
+            
+              </div>
+  
+  
+            </div>
+  
+            <input type="text"
+            class="form-control" 
+            name="Nombre"
+            #Nombre="ngModel"
+            [(ngModel)]="service.formDataProveedor.Nombre"
+            placeholder="Nombre"
+            required
+            >
+          </div>
+      </div>
+
+      <div class="form-group">
+      <button type="submit" class="btn btn-success btn-lg btn-block"> 
+        Guardar Proveedor
+      </button>
+      </div>
+
+    </form>
+
+
+</div>
+
+</div>

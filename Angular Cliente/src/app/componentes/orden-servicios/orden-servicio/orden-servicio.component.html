@@ -1,0 +1,118 @@
+<div class="card">
+
+    <div class="card-header">
+        <label for="">Registro de Orden</label>
+        
+    </div>
+    <div class="card-body">
+
+        <form  #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+            <input type="hidden" name="NIdSo" value="service.formData.NIdSo">
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    Proveedor
+                </div>
+
+                <div class="col-md-9">
+                        <div class="form-group">
+                                <select id="select-type-basic" class="form-control" [(ngModel)]="service.formData.NIdProvNId">
+                                        <option *ngFor="let proveedores of servicioProv.list " value="{{proveedores.NId}}">
+                                                {{proveedores.RazonSocial}} 
+                                        </option>
+                                    </select>
+                        </div>
+            
+                </div>
+
+            </div>
+  
+   
+
+            
+            <div class="row">
+
+                    <div class="col-md-3">
+                        Turno
+                    </div>
+    
+                    <div class="col-md-9">
+                            <div class="form-group">
+                                    <select id="select-type-basic" class="form-control" [(ngModel)]="service.formData.turno">
+                                            <option *ngFor="let turno of turno_values" value=" {{turno}} ">
+                                                    {{turno}} 
+                                            </option>
+                                        </select>
+                            </div>
+                
+                    </div>
+                    
+                </div>
+
+
+
+          
+              <div class="form-group">
+                  <div class="input-group">
+                          <div class="input-group-prepend">
+                              <div class="input-group-text bg-white">
+                                      <i class="fa fa-calendar-alt"
+                                      [class.green-icon]="FechaEstimada.valid"
+                                      [class.red-icon]="FechaEstimada.invalid && FechaEstimada.touched"></i>  
+                                      
+                              </div>
+                          </div>
+                          <input type="date" 
+                          class="form-control" 
+                          name="FechaEstimada"
+                          #FechaEstimada="ngModel"
+                          [(ngModel)]="service.formData.FechaEstimada"
+                          placeholder="FechaEstimada"
+                          required  
+                         
+                          >
+                  </div>
+              </div>
+                
+              <div class="row">
+                      <div class="form-group col-md-12">
+                              <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <div class="input-group-text bg-white">
+
+                                                  <i class="fa fa-align-justify" 
+                                                  [class.green-icon]="Observacion.valid"
+                                                  [class.red-icon]="Observacion.invalid && Observacion.touched"></i>
+                                          </div>
+                                      </div>
+                                      <input type="text" 
+                                      class="form-control" 
+                                      name="Observacion"
+                                      #Observacion="ngModel"
+                                      [(ngModel)]="service.formData.Observacion"
+                                      placeholder="Observacion"
+                                      required 
+                                      >
+                              </div>
+                          </div>
+                      
+                      
+               
+              </div>
+              
+          
+              <div class="form-group">
+          
+                  <button type="submit" class="btn btn-primary btn-lg btn-block">
+                          <i class="far fa-save"></i>
+                      Guardar Orden
+                  </button>
+              </div>
+          
+          
+                  
+             
+          </form>
+    </div>
+</div>
